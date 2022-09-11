@@ -1,0 +1,77 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $dark-color;
+    line-height: 1.5;
+    background-color: rgba($primary-color-variant, 0.1);
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+section {
+    margin-top: 5rem;
+
+    &>h2 {
+        text-align: center;
+    }
+
+    &>p {
+        width: 50%;
+        margin: 0.6rem auto;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+.btn {
+    @include button;
+}
+
+.btn-primary {
+    @include button($white-color, $primary-color);
+}
+
+
+/* ======================== Media Query (TABLET DEVIECES) ============================= */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: $container-md;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section{
+        &>p{
+            width: 70%;
+        }
+    }
+}
+
+/* ======================== Media Query (MOBILE DEVIECES) ============================= */
+@media screen and (max-width: 600px) {
+    section {
+        &>p {
+            width: $container-md;
+        }
+    }
+}

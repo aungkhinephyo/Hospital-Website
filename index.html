@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hospital Website</title>
+    <!-- boxicons css1 -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- miniified css -->
+    <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+
+<body>
+    <!-------------------------- Start Navbar -------------------------------->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__brand">
+                <h2>Future</h2>
+            </a>
+
+            <ul class="navbar__nav">
+                <li style="--i:0"><a href="index.html">Home</a></li>
+                <li style="--i:1"><a href="#services">Services</a></li>
+                <li style="--i:2"><a href="#specialists">Specialists</a></li>
+                <li style="--i:3"><a href="#testimonials">Testimonials</a></li>
+                <li style="--i:4"><a href="#appointment" class="btn">Make Appointment</a></li>
+            </ul>
+
+            <button type="button" id="open__nav"><i class='bx bx-menu'></i></button>
+            <button type="button" id="close__nav"><i class='bx bx-x'></i></button>
+        </div>
+    </nav>
+    <!-------------------------- End Navbar -------------------------------->
+
+    <!-------------------------- Start Hero Section -------------------------------->
+    <header>
+        <div class="container">
+            <div class="header__content">
+                <div>
+                    <h1>Complete health care solution for everyone</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to
+                        make a type specimen
+                        book.
+                    </p>
+                    <a href="#appointment" class="btn">Make Appointment</a>
+                </div>
+            </div>
+            <div class="header__img">
+                <img src="./assets/header.svg" />
+            </div>
+        </div>
+    </header>
+    <!-------------------------- End Hero Section -------------------------------->
+
+    <!-------------------------- Start Service Section -------------------------------->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a
+            galley of type.
+        </p>
+
+        <div class="container">
+
+            <article>
+                <i class='bx bx-book-content'></i>
+                <div>
+                    <h4>Online Booking</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab aspernatur voluptatibus
+                        voluptatum perspiciatis, ducimus assumenda blanditiis quae architecto minus.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <i class='bx bx-trophy'></i>
+                <div>
+                    <h4>Qualified Doctors</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab aspernatur voluptatibus
+                        voluptatum perspiciatis, ducimus assumenda blanditiis quae architecto minus.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <i class='bx bx-clinic'></i>
+                <div>
+                    <h4>Private Support</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab aspernatur voluptatibus
+                        voluptatum perspiciatis, ducimus assumenda blanditiis quae architecto minus.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <i class='bx bxs-donate-blood'></i>
+                <div>
+                    <h4>Well Cared</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab aspernatur voluptatibus
+                        voluptatum perspiciatis, ducimus assumenda blanditiis quae architecto minus.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <i class='bx bxs-ambulance'></i>
+                <div>
+                    <h4>Always Open For Emergency</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab aspernatur voluptatibus
+                        voluptatum perspiciatis, ducimus assumenda blanditiis quae architecto minus.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <i class='bx bx-plus-medical'></i>
+                <div>
+                    <h4>24 Hour Service</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab aspernatur voluptatibus
+                        voluptatum perspiciatis, ducimus assumenda blanditiis quae architecto minus.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <!-------------------------- End Service Section -------------------------------->
+
+    <!-------------------------- Start Specialists Section -------------------------------->
+    <section id="specialists" class="specialists">
+        <h2>Our Specialists</h2>
+        <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a
+            galley of type.
+        </p>
+
+        <div class="container">
+
+            <article>
+                <div class="doctor__img">
+                    <img src="./assets/specialist1.jpg">
+                </div>
+                <div class="doctor__details">
+                    <h4>Professor Jowey</h4>
+                    <small>Surgery Specialist</small>
+                </div>
+                <div class="doctor__socials">
+                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <a href="https://api.whatsapp.com/send?=+959778997079" class="doctor__whatsapp" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
+            </article>
+
+            <article>
+                <div class="doctor__img">
+                    <img src="./assets/specialist2.jpg">
+                </div>
+                <div class="doctor__details">
+                    <h4>Professor Selena</h4>
+                    <small>Anesthetic Specialist</small>
+                </div>
+                <div class="doctor__socials">
+                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <a href="https://api.whatsapp.com/send?=+959778997079" class="doctor__whatsapp" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
+            </article>
+
+            <article>
+                <div class="doctor__img">
+                    <img src="./assets/specialist3.jpg">
+                </div>
+                <div class="doctor__details">
+                    <h4>Professor Lilia</h4>
+                    <small>Neurology Specialist</small>
+                </div>
+                <div class="doctor__socials">
+                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <a href="https://api.whatsapp.com/send?=+959778997079" class="doctor__whatsapp" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
+            </article>
+
+            <article>
+                <div class="doctor__img">
+                    <img src="./assets/specialist4.jpg">
+                </div>
+                <div class="doctor__details">
+                    <h4>Professor Jessica</h4>
+                    <small>Cardiology Specialist</small>
+                </div>
+                <div class="doctor__socials">
+                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <a href="https://api.whatsapp.com/send?=+959778997079" class="doctor__whatsapp" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
+            </article>
+
+        </div>
+    </section>
+    <!-------------------------- End Specialists Section -------------------------------->
+
+    <!-------------------------- Start Testimonials Section -------------------------------->
+    <section id="testimonials" class="testimonials swiper mySwiper">
+        <h2>What Our Patients Say</h2>
+        <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a
+            galley of type.
+        </p>
+
+        <div class="container swiper-wrapper">
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar1.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Hannah</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar2.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Angus Leigh</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar3.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Evan Chadwick</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar4.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Ms. July</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar5.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Wendy</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar6.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Harmony</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <small>
+                    Lorem ipsum dolor sit amet ctetur adipisicing elit. Dicta sint placeat fugiat voluptas, numquam
+                    quibusdam?
+                </small>
+                <div class="patient">
+                    <div class="avatar">
+                        <img src="./assets/avatar7.jpg" />
+                    </div>
+                    <div class="patient__details">
+                        <h5>Kaylie</h5>
+                        <small>Patient</small>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-------------------------- End Testimonials Section -------------------------------->
+
+    <!-------------------------- Start Contact Section -------------------------------->
+    <section id="appointment" class="appointment">
+        <div class="container">
+
+            <div class="appointment__content">
+
+                <h2>Get An Appointment</h2>
+                <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="feature__content">
+                        <h4>Experience Doctors</h4>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quas, ipsam perspiciatis,
+                            possimus harum
+                            aspernatur vel ipsa voluptatibus quis incidunt atque asperiores quia ab. Impedit!
+                        </small>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <i class='bx bx-dna'></i>
+                    </div>
+                    <div class="feature__content">
+                        <h4>Advanced Technology</h4>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quas, ipsam perspiciatis,
+                            possimus harum
+                            aspernatur vel ipsa voluptatibus quis incidunt atque asperiores quia ab. Impedit!
+                        </small>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <i class='bx bx-plus-medical'></i>
+                    </div>
+                    <div class="feature__content">
+                        <h4>Emergency Care</h4>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quas, ipsam perspiciatis,
+                            possimus harum
+                            aspernatur vel ipsa voluptatibus quis incidunt atque asperiores quia ab. Impedit!
+                        </small>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="appointment__form">
+                <form action="https://formspree.io/f/mgeqoqvk" method="POST">
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="Patient's Name" class="form-control" autocomplete="off" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="number" name="Phone Number" class="form-control" autocomplete="off" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" name="Date" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Deparment</label>
+                        <select name="Department" class="form-control" required>
+                            <option value="" selected disabled>Choose Department</option>
+                            <option value="surgery">Surgery Deparment</option>
+                            <option value="obstetrics">Obstetrics Deparment</option>
+                            <option value="paediatrics">Paediatrics Deparment</option>
+                            <option value="orthopaedics">Orthopaedics Deparment</option>
+                            <option value="neurology">Neurology Deparment</option>
+                            <option value="cardiology">Cardiology Deparment</option>
+                            <option value="dental">Dental Deparment</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Doctor</label>
+                        <select name="Doctor" class="form-control" required>
+                            <option value="" selected disabled>Choose Doctor</option>
+                            <option value="1">Doctor Jowey</option>
+                            <option value="2">Doctor Selena</option>
+                            <option value="3">Doctor Lilia</option>
+                            <option value="4">Doctor Jessica</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Additional Message</label>
+                        <textarea name="Message" rows="5" class="form-control" placeholder="Tell us your condition"
+                            required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn-primary">Submit Request</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-------------------------- End Contact Section -------------------------------->
+
+    <!-------------------------- Start Footer Section -------------------------------->
+    <footer>
+        <div class="container">
+            <div>
+                <h3>Future</h3>
+                <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                <ul>
+                    <li><i class='bx bxs-phone-call'></i> <small>+959778997079</small></li>
+                    <li><i class="bx bxs-envelope"></i> <small>akpedu001@gmail.com</small></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0);">Cookie Policy</a></li>
+                    <li><a href="javascript:void(0);">Purchasing Policy</a></li>
+                    <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                    <li><a href="javascript:void(0);">Carrer</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#specialists">Specialists</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#appointment">Make Appointment</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="javascript:void(0);">Medical Consultation</a></li>
+                    <li><a href="javascript:void(0);">Medical News</a></li>
+                    <li><a href="javascript:void(0);">FAQs</a></li>
+                    <li>
+                        <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <small>&copy; Copyright <span id="get_year"></span> Credit to EGATOR.</small>
+            <a href="https://github.com/aungkhinephyo/Hospital-Website.git" target="_blank"> <i
+                    class='bx bxs-chevrons-right'></i>Source
+                Code</a>
+        </div>
+    </footer>
+    <!-------------------------- End Footer Section -------------------------------->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./app.js"></script>
+
+</body>
+
+
+</html>

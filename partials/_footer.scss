@@ -1,0 +1,76 @@
+footer {
+    background-color: $black-color;
+    color: $white-color;
+
+    .copyright{
+        text-align: center;
+        padding: 0.5rem 0;
+        border-top: 1px solid rgba($light-color,0.1);
+
+        a{
+            color: $secondary-color;
+            
+            i{
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .container {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+
+        h3 {
+            margin-bottom: 0.6rem;
+        }
+
+        small{
+            color: $light-color;
+        }
+        a {
+            color: $light-color;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        ul {
+            margin-top: 0.6rem;
+
+            li {
+                margin: 0.5rem 0;
+
+                i{
+                    font-size: 1rem;
+                    margin-right: 0.5rem;
+                }
+
+                a:hover{
+                    letter-spacing: 2px;
+                    color: $primary-color-variant;
+                }
+            }
+        }
+    }
+}
+
+/* ======================== Media Query (MOBILE DEVIECES) ============================= */
+@media screen and (max-width: 700px) {
+    footer{
+        .container{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    footer{
+        .container{
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.specialists {
+    .container {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        article {
+            background-color: $white-color;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 0 2rem 1rem rgba($black-color, 0.1);
+            position: relative;
+            transition: all 0.3s ease;
+
+            &:hover {
+                box-shadow: none;
+
+                .doctor__img::before {
+                    left: 0;
+                    border-radius: 0;
+                }
+
+                .doctor__socials,
+                .doctor__whatsapp {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+            }
+
+            .doctor__img {
+                width: 100%;
+                height: 20rem;
+                border-radius: 1rem;
+                overflow: hidden;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, rgba($primary-color, 0.8), rgba($primary-color-variant, 0.8));
+                    transition: all 1s ease;
+                }
+            }
+
+            .doctor__details {
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            .doctor__socials {
+                position: absolute;
+                top: 5%;
+                right: 10%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s 0.4s ease;
+
+                a {
+                    color: $primary-color;
+                    background-color: $white-color;
+                    width: 25px;
+                    height: 25px;
+                    display: grid;
+                    place-items: center;
+                    border-radius: 50%;
+                    font-size: 1.2rem;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        background-color: $primary-color;
+                        color: $white-color;
+                    }
+                }
+            }
+
+            .doctor__whatsapp {
+                background-color: $success-color;
+                color: $white-color;
+
+                position: absolute;
+                left: 50%;
+                bottom: 25%;
+                transform: translateX(-50%);
+
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                font-size: 2rem;
+
+                display: grid;
+                place-items: center;
+
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s 0.4s ease;
+
+            }
+        }
+
+    }
+}
+
+/* ======================== Media Query (TABLET DEVIECES) ============================= */
+@media screen and (max-width: 900px) {
+    .specialists {
+        .container {
+            grid-template-columns:45% 45%;
+            column-gap: 10%;
+        }
+    }
+}
+
+/* ======================== Media Query (MOBILE DEVIECES) ============================= */
+@media screen and (max-width: 600px) {
+    .specialists {
+        .container {
+            grid-template-columns: 60%;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .specialists {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+header {
+    @include gradientBackground;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    .container {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .header__content {
+            display: grid;
+            place-items: center;
+
+            div {
+                h1 {
+                    font-size: 3rem;
+                    text-transform: capitalize;
+                    color: $white-color;
+                }
+
+                p {
+                    margin: 1.5rem 0;
+                    color: $light-color;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .header__img {
+            display: grid;
+            place-items: center;
+        }
+    }
+}
+
+
+/* ======================== Media Query (TABLET DEVIECES) ============================= */
+@media screen and (max-width: 1024px) {
+
+    header {
+        height: 100vh;
+
+        .container {
+            .header__content {
+                div {
+                    h1 {
+                        font-size: 2.2rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======================== Media Query (MOBILE DEVIECES) ============================= */
+@media screen and (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        .container {
+            margin-top: 8rem;
+            text-align: center;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+
+            .header__content {
+                div {
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
